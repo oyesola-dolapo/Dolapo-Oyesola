@@ -1,0 +1,249 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: #fff;
+    font-family: Inter;
+}
+
+body{
+    background: #000000; 
+}
+
+.container{
+    display: flex;
+}
+
+.contact, nav{
+    height: 100vh;
+    /* border: 2px solid #fff; */
+}
+/* contact */
+.contact{
+    width: 85%;
+}
+
+.header{
+    position: relative;
+    width: 100vw;
+    /* border: 2px solid #fff; */
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header .h1{
+    font-size: 100px;
+    letter-spacing: 10px;
+    color: rgba(255, 255, 255, 0.2);
+}
+
+.header .h2{
+    position: absolute;
+    font-size: 48px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    letter-spacing: 4px;
+}
+.aside{
+    padding: 40px 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* info */
+.infos .sub-text{
+    margin: 10px 0;
+    line-height: 150%;
+    font-size: 12px;
+}
+
+.info-header{
+    font-size: 24px;
+}
+
+.con{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+.con-info p {
+    font-size: 12px;
+}
+
+.con i{
+    font-size: 32px;
+}
+
+.social ul{
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+
+.social ul li{
+    width: 30px;
+    height: 30px;
+    border-radius: 50px;
+}
+
+.social ul li a{
+    text-decoration: none;
+    background: rgba(255, 255, 255, 0.2);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+    transition: transform 300ms;
+}
+
+.social ul li a:hover{
+    transform: scale(1.2);
+}
+
+.social ul li a i{
+    font-size: 14px;
+}
+
+/* inputs */
+/* .infos, .inputs{
+    border: 2px solid #fff;
+} */
+
+.inputs{
+    width: 62%;
+}
+
+.input_info{
+    display: flex;
+    justify-content: space-between;
+}
+.input_info input{
+    width: 220px;
+    height: 40px;
+    border-radius: 50px;
+    padding: 0 10px;
+    background: rgba(255, 255, 255, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    /* border: none; */
+    /* margin-right: 20px; */
+    outline: none;
+}
+
+.input_info input::placeholder, .inputs textarea::placeholder{
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 10px;
+    font-weight: 600;
+}
+
+.inputs textarea{
+    background: rgba(255, 255, 255, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    /* border: none; */
+    outline: none;
+    margin-top: 20px;
+    width: 100%;
+    border-radius: 30px;
+    padding: 15px;
+}
+
+.snd{
+    background: goldenrod;
+    padding: 10px 20px;
+    border-radius: 50px;
+    margin-top: 20px;
+    border: none;
+}
+/* nav */
+nav{
+    position: fixed;
+    right: 0;
+    width: 20%;
+    height: 100vh;
+    display: flex;
+    align-items: center;z-index: 999;
+}
+
+nav ul, nav ul li{
+    width: 100%;
+    height: 100%;
+    /* border: 2px solid #fff; */
+}
+
+nav ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+nav ul li{
+    list-style: none;
+    margin-bottom: 30px;
+    width: 140px;
+    height: 50px;
+    display: flex;
+    justify-content: end;
+}
+
+nav ul li a{
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    background-color: rgba(255, 255, 255, 0.1);
+    text-decoration: none;
+    display: flex;
+    justify-content: end;
+    gap: 15.5px;
+    width: 36%;
+    height: 100%;
+    padding: 0 15px;
+    align-items: center;
+    border-radius: 50px;
+    overflow: hidden;
+    transition: width 300ms, background-color 300ms;
+}
+
+nav ul li a p, nav ul li a i{
+    font-size: 18px;
+}
+
+nav ul li a:hover{
+    width: 100%;
+    background-color: goldenrod;
+    animation: zoom 1s infinite;
+}
+
+@keyframes zoom{
+    0%, 100%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.1);
+    }
+}
+
+@media (max-width: 1200px){
+    .container{
+        display: none;
+    }
+
+    body{
+        display: flex;
+        height: 100vh;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .mediaq{
+        display: block;
+        width: max-content;
+        border: 1px solid rgba(218, 165, 32, 0.4);
+        box-shadow: 0 0 30px rgba(218, 165, 32, 0.4);
+        padding: 5px 10px;
+    }
+}
