@@ -72,6 +72,7 @@ body{
 .personal-infos{
     display: flex;
     gap: 80px;
+    margin-bottom: 10px;
 }
 
 .personal-infos p{
@@ -83,12 +84,14 @@ body{
 .cv{
     background: goldenrod;
     border: none;
-    padding: 10px;
+    padding: 5px 20px;
     border-radius: 30px;
-    margin-top: 10px;
+    cursor: pointer;
 }
 
-.cv::placeholder{
+.cv button{
+    border: none;
+    background: none;
     color: #fff;
     text-align: center;
     font-size: 14px;
@@ -305,6 +308,10 @@ nav ul li a:hover{
     }
 }
 
+.mediaq{
+    display: none;
+}
+
 @media (max-width: 1200px){
     .container{
         display: none;
@@ -315,6 +322,7 @@ nav ul li a:hover{
         height: 100vh;
         justify-content: center;
         align-items: center;
+        overflow: hidden;
     }
 
     .mediaq{

@@ -227,6 +227,10 @@ nav ul li a:hover{
     }
 }
 
+.mediaq{
+    display: none;
+}
+
 @media (max-width: 1200px){
     .container{
         display: none;
@@ -237,6 +241,7 @@ nav ul li a:hover{
         height: 100vh;
         justify-content: center;
         align-items: center;
+        overflow: hidden;
     }
 
     .mediaq{
