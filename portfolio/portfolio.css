@@ -133,17 +133,8 @@ nav ul li a p, nav ul li a i{
 nav ul li a:hover{
     width: 100%;
     background-color: goldenrod;
-    animation: zoom 1s infinite;
 }
 
-@keyframes zoom{
-    0%, 100%{
-        transform: scale(1);
-    }
-    50%{
-        transform: scale(1.1);
-    }
-}
 
 .mediaq{
     display: none;
