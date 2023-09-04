@@ -166,6 +166,27 @@ body{
     font-size: 14px;
 }
 
+.skills .html{
+    border-right-color:goldenrod;
+}
+
+.skills .js{
+    border-right: 10px solid goldenrod;
+}
+
+.skills .css{
+    border-right: 10px solid goldenrod;
+    border-bottom: 10px solid goldenrod;
+}
+
+.skills .ui{
+    border-right: 10px solid goldenrod;
+    border-bottom: 10px solid goldenrod;
+}
+
+
+
+
 /* EXPERIENCE */
 .exp-header{
     font-size: 24px;
