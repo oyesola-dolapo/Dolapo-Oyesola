@@ -38,14 +38,19 @@ body{
 }
 
 .image img{
-    box-shadow: 0 0 30px #000;
+    box-shadow: 0 5px 30px rgba(218, 165, 32, 0.4),  
+        -5px 0 30px rgba(0, 0, 0, 0.9);
     width: 400px;
     border-radius: 10px;
-    height: auto;
+    height: 580px;
+    object-fit: cover;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    border: 2px
+        solid
+        goldenrod;
 }
 
 .info{
