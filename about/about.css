@@ -324,6 +324,51 @@ nav ul li a:hover{
     display: none;
 }
 
+.settings-role{
+    position: absolute;
+    top: 50%;
+    left: 0;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0 4px 4px 0;
+    width: 40px;
+    height: 35px;
+    animation: bounce 2s linear infinite;
+}
+
+.settings-role i{
+    font-size: 20px;
+    color: #000;
+    animation: rotate 2s linear infinite;
+    
+}
+
+@keyframes rotate{
+    0%{
+        transform: rotate(0deg);
+    }
+    50%{
+        transform: rotate(180deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes bounce{
+    0%, 100%{
+        transform: translateY(0);
+    }
+    30%{
+        transform: translateY(-2px);
+    }
+    60%{
+        transform: translateY(2px);
+    }
+}
+
 @media (max-width: 1200px){
     .container{
         display: none;
