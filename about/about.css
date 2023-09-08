@@ -8,7 +8,7 @@
 }
 
 body{
-    background: #000;
+    background: #121212;
 }
 .container{
     width: 100%;
@@ -34,7 +34,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    background: #000;
+    background: #121212;
     z-index: 999;
 }
 
