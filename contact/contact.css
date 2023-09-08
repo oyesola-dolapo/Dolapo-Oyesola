@@ -153,6 +153,10 @@ body{
     padding: 15px;
 }
 
+.input_info input:focus, .inputs textarea:focus{
+    border: 2px solid goldenrod;
+}
+
 .snd{
     background: goldenrod;
     padding: 10px 20px;
