@@ -122,7 +122,8 @@ body{
 
 .input_info{
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
 }
 .input_info input{
     width: 220px;
@@ -296,7 +297,7 @@ nav ul li a:hover{
     }
 }
 
-@media (max-width: 800px){
+@media (max-width: 1000px){
     .container{
         display: none;
     }
